@@ -9,24 +9,25 @@
 
 <title></title>
 
-<div class="m-4 lead">Here's a couple of suggested product names for you:</div>
-<div class="m-4">{{data['numbered_product_names']}}</div>
+<div class="row">
+  <div class="col">
+    <p class="sub-header-text">Here's a couple of suggested product names for you:</p> 
+    <p class="standard-black-text">{{data['numbered_product_names']}}</p>
+  </div>
+  <div class="col">
+    <p class="sub-header-text">Enter the name you want to pick for the product:</p>
+    <div class="">
+      <input type="text" name="" value="" id="product_name" class="accept-input" placeholder="Name you picked"/>
+     </div>
+    <div class="">
+      <button type="button" name="button" class="btn submit-button" id="submit_product_name">Submit</button>
+    </div>
 
-<br /><br />
-<div class="m-3 lead text-center">
-  Enter the name you want to pick for the product:
+  </div>
 </div>
-<div class="m-3 text-center">
-  <input type="text" name="" value="" id="product_name" />
-</div>
-<div class="m-3 text-center">
-  <button
-    type="button"
-    name="button"
-    class="btn btn-secondary"
-    id="submit_product_name"
-  >
-    Submit
-  </button>
-</div>
+
+
+
+
+
 {% endblock %}

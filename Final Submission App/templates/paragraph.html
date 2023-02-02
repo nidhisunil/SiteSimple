@@ -7,27 +7,30 @@
   let data = {{data|tojson}}
 </script>
 
-<div class="m-4 lead">Here's a suggested paragraph for your product</div>
-<div class="m-4">{{data['product_paragraph']}}</div>
 
-<div class="m-4 lead">Here's also some suggested colours for your website:</div>
-<div class="m-4">{{data['numbered_product_colours']}}</div>
+<div class="row">
+  <div class="col">
+    <p class="sub-header-text">Here's a suggested paragraph for your product:</p> 
+    <p class="standard-black-text">{{data['product_paragraph']}}</p>
+    <p class="sub-header-text">Here's also some suggested colours for your website:</p> 
+    <p class="standard-black-text">{{data['numbered_product_colours']}}</p>
+  </div>
+  <div class="col">
+    <p class="sub-header-text">Which colour do you want your website to be primarily?</p>
+    <div class="">
+      <input type="text" name="" value="" id="product_colour" class="accept-input" placeholder="Colour you picked"/>
+     </div>
+    <div class="">
+      <button type="button" name="button" class="btn submit-button" id="submit_product_colour">Submit</button>
+    </div>
+  </div>
+</div>
 
-<br /><br />
-<div class="m-3 lead text-center">
-  Which colour do you want your website to be primarily?
-</div>
-<div class="m-3 text-center">
-  <input type="text" name="" value="" id="product_colour" />
-</div>
-<div class="m-3 text-center">
-  <button
-    type="button"
-    name="button"
-    class="btn btn-secondary"
-    id="submit_product_colour"
-  >
-    Submit
-  </button>
-</div>
+
+
+
+
+
+
+
 {% endblock %}

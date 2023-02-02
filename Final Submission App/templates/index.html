@@ -3,17 +3,29 @@
 {% block content %}
   <script type="text/javascript" src="{{ url_for('static', filename = 'index.js') }}"></script>
   
-  <div class="m-4 mb-5 lead text-center">
-    Welcome to our website generator! Let's get started. <br>
-  </div>
-  <div class="m-3 lead text-center">
-	  What are you looking to sell?
-  </div>
-  <div class="m-3 text-center">
-  	<input type="text" name="" value="" id="product_id" placeholder="Product">
-  </div>
-  <div class="m-2 text-center">
-  	<button type="button" name="button" class="btn btn-secondary" id="submit-product_id">Submit</button>
+  
+  
+
+
+<div class="row ">
+  <div class="col text-content">
+    <p class="small-title-text">Welcome to Site Simple</p>
+    <p class="big-text">We know it's hard to build a website</p>
+    <p class="standard-black-text">Sometimes you just want a simple, no-nonsense product for your website. We'll do that for you.</p>
+    <p class="standard-black-text">Start by entering what you're looking to sell.</p>
+    <div class="">
+     <input type="text" name="" value="" id="product_id" placeholder="Product" class="accept-input">
+    </div>
+    <div class="">
+    <button type="button" name="button" class="btn submit-button" id="submit-product_id">Submit</button>
+    </div>
   </div>
 
+
+  <div class="col">
+    <img src="https://media4.giphy.com/media/TEILCythSScYyaaEDK/giphy.gif?cid=ecf05e478bgqswp3sx0tsangcswpxvoevl1h0w1pnc5t6tl6&rid=giphy.gif&ct=s" alt="">
+  </div>
+</div>
+
+  
 {% endblock %}

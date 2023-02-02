@@ -7,26 +7,23 @@
   let data = {{data|tojson}}
 </script>
 
-<div class="m-4 lead">
-  Here's some suggested complimetary colours for the website
-</div>
-<div class="m-4">{{data['numbered_product_seccolours']}}</div>
 
-<br /><br />
-<div class="m-3 lead text-center">
-  Which secondary colour do you want your website to be?
+<div class="row">
+  <div class="col">
+    <p class="sub-header-text">Here's some suggested complimetary colours for the website:</p> 
+    <p class="standard-black-text">{{data['numbered_product_seccolours']}}</p>
+  </div>
+  <div class="col">
+    <p class="sub-header-text">Which secondary colour do you want your website to be?</p>
+    <div class="">
+      <input type="text" name="" value="" id="product_sscolour" class="accept-input" placeholder="Secondary colour you picked"/>
+     </div>
+    <div class="">
+      <button type="button" name="button" class="btn submit-button" id="submit_product_sscolour">Submit</button>
+    </div>
+  </div>
 </div>
-<div class="m-3 text-center">
-  <input type="text" name="" value="" id="product_sscolour" />
-</div>
-<div class="m-3 text-center">
-  <button
-    type="button"
-    name="button"
-    class="btn btn-secondary"
-    id="submit_product_sscolour"
-  >
-    Submit
-  </button>
-</div>
+
+
+
 {% endblock %}

@@ -7,26 +7,22 @@
   let data = {{data|tojson}}
 </script>
 
-<div class="m-4 lead">
-  Here's a couple of suggested taglines for your product:
-</div>
-<div class="m-4">{{data['numbered_product_taglines']}}</div>
 
-<br /><br />
-<div class="m-3 lead text-center">
-  Enter the tagline you want to pick for the product:
+<div class="row">
+  <div class="col">
+    <p class="sub-header-text">Here's a couple of suggested taglines for your product:</p> 
+    <p class="standard-black-text">{{data['numbered_product_taglines']}}</p>
+  </div>
+  <div class="col">
+    <p class="sub-header-text">Enter the tagline you want to pick for the product:</p>
+    <div class="">
+      <input type="text" name="" value="" id="tagline_name" class="accept-input" placeholder="Tagline you picked"/>
+     </div>
+    <div class="">
+      <button type="button" name="button" class="btn submit-button" id="submit_tagline_name">Submit</button>
+    </div>
+  </div>
 </div>
-<div class="m-3 text-center">
-  <input type="text" name="" value="" id="tagline_name" />
-</div>
-<div class="m-3 text-center">
-  <button
-    type="button"
-    name="button"
-    class="btn btn-secondary"
-    id="submit_tagline_name"
-  >
-    Submit
-  </button>
-</div>
+
+
 {% endblock %}

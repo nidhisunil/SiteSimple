@@ -1,19 +1,67 @@
+:root {
+  --dark-green-color:#498b76;
+  --light-green-color:#84cead;
+  --yellow-color:#eec359;
+}
 
-  .container {
-    display: grid;
-  }
+body{
+  background-color: #ececec;
+}
 
-  .container_body{
-    background-color: #DBE1F1;
-    height:100vh;
-  }
-
-  nav{
-    -webkit-box-shadow: 0px 6px 6px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 6px 6px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 6px 6px 2px rgba(0,0,0,0.75);
-  }
 img{
-  display: inline;
-  margin-left: 30%;
+  height:500px;
+  width: 500px;;
+}
+
+.navbar-brand, .navbar-brand:hover{
+  color: var(--yellow-color);
+}
+
+.grey-block{
+  background-color: #ececec;
+}
+
+.col{
+  padding: 50px;
+}
+
+.text-content{
+  padding-top: 10%;
+}
+
+.small-title-text{
+  color: var(--yellow-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+}
+
+.big-text{
+  color: var(--dark-green-color);
+  font-family: 'Roboto Slab', serif;
+  font-size: 48px;
+}
+
+.standard-black-text{
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.accept-input{
+  width:100%;
+  margin-bottom: 10px;
+  border: 2px solid darkgray;
+  padding: 4px;
+}
+
+.submit-button{
+  background-color: var(--yellow-color);
+  width: 100%;
+  color: white;
+}
+
+.sub-header-text{
+  color: var(--dark-green-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
 }
